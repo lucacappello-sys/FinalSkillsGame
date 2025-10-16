@@ -24,7 +24,7 @@ const roles = [
     id: 2,
     label: 'Role 2',
     title: 'PLANT FLOW-KEEPER',
-    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency. The role combines strong management, technical, operational, and analytical skills ...',
+    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency...',
     color: 'bg-[#E59866]',
     illustration: role2Img
   },
