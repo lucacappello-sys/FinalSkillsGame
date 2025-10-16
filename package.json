@@ -60,6 +60,6 @@
             "dev": "vite",
             "build": "chmod +x node_modules/.bin/vite && vite build",
   
-           "start": "node node_modules/serve/bin/cli.js -s build -l $PORT"
+           "start": "node ../node_modules/serve/bin/cli.js -s build -l $PORT"
       }
 }
