@@ -82,7 +82,7 @@ export default function ReviewScreen({ selectedRole, selectedSector, onContinue,
 
   return (
     <div className="size-full flex flex-col">
-      <div className="bg-[#D8DCE6] px-[29px] py-[24px] py-[9px] px-[24px]">
+      <div className="bg-[#D8DCE6] px-[29px] py-[5px] py-[9px] px-[24px]">
         <h2 className="text-[#2C3E50] text-center">Review your choices:</h2>
         <p className="text-[#2C3E50] text-center mt-1">Review your selections before starting the game</p>
       </div>

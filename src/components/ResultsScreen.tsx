@@ -104,9 +104,9 @@ export default function ResultsScreen({ selectedRole, selectedSector, scores, fi
       </div>
       
       <div className="flex-1 overflow-hidden p-4 bg-white ">
-        <div className="max-w-6xl mx-auto flex justify-content: center gap-8">
+        <div className="max-w-6xl mx-auto flex gap-8">
           {/* Left side - Cards and Final Score */}
-          <div className="flex flex-col gap-6 w-[66%] ">
+          <div className="flex-align  flex-col gap-6 w-[66%] ">
             <div className="flex gap-6">
         {/* Role Card */}
         {role && (

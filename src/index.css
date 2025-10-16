@@ -444,7 +444,10 @@
   .flex {
     display: flex;
   }
-
+  .flex-align{
+    display: flex;
+    justify-content: space-evenly;
+  }
   .grid {
     display: grid;
   }

@@ -40,13 +40,13 @@ const roles = [
 
 export default function RoleScreen({ selectedRole, onSelectRole, onContinue, onHome }: RoleScreenProps) {
   return (
-    <div className="size-full flex flex-col">
-      <div className="bg-[rgb(234,239,246)] px-[29px] py-[24px] py-[9px] px-[24px]">
+    <div className="size-full flex flex-col ">
+      <div className="bg-[rgb(234,239,246)] px-[29px] py-[5px] py-[9px] px-[24px]">
         <h2 className="text-[rgb(0,0,0)] text-center text-[20px]">Choose the role:</h2>
         <p className="text-[rgb(0,0,0)] text-center mt-1 text-[15px]">Select the role you want to analyse.</p>
       </div>
       
-     <div className="flex-1 flex items-center justify-center p-4 bg-white overflow-hidden">
+     <div className="flex-1  p-4 bg-white overflow-hidden">
         <div className="flex gap-6 max-w-6xl">
           {roles.map((role) => (
             <div

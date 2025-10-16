@@ -67,7 +67,7 @@ export default function AnalyticalSkillsScreen({
 
   return (
     <div className="size-full flex flex-col">
-      <div className="bg-[#D8DCE6] px-[29px] py-[24px] py-[9px] px-[24px]">
+      <div className="bg-[#D8DCE6] px-[29px] py-[5px] py-[9px] px-[24px]">
         <h2 className="text-[rgb(0,0,4)] text-center text-[30px] font-bold">
           Select skills:
         </h2>
