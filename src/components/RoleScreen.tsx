@@ -16,7 +16,7 @@ const roles = [
     id: 1,
     label: 'Role 1',
     title: 'SMART LINE OPERATOR',
-    description: 'Works with collaborative robots which supervises their operations, and performs basic (repetitive) work or robots but requires most manual and repetitive tasks, this role requires broader skills than before, especially technical, analytical, and collaboration skills.',
+    description: 'Works alongside robots in shared areas, supervises their operations, and performs basic troubleshooting. As robots handle the most manual and repetitive tasks, this role requires broader skills than before, especially technical, analytical, and collaboration skills.',
     color: 'bg-[#5DADE2]',
     illustration: role1Img
   },
@@ -24,7 +24,7 @@ const roles = [
     id: 2,
     label: 'Role 2',
     title: 'PLANT FLOW-KEEPER',
-    description: 'Manages production flows in smart factories and supervises production flows, supports and alerts and robots and ensures process efficiency. This role combines strong management, technical, operational, and analytical skills to plan activities, resolve medium level issues, and maintain smooth and safe production operations.',
+    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency. The role combines strong management, technical, operational, and analytical skulls to plan activities, resolve medium-level issues, and maintain smooth and safe production operations.',
     color: 'bg-[#E59866]',
     illustration: role2Img
   },
@@ -32,7 +32,7 @@ const roles = [
     id: 3,
     label: 'Role 3',
     title: 'TECH SOLVER',
-    description: 'Acts as key role in designing, programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues. Requires strong technical skills and advanced programming codes and solid analytical skills.',
+    description: 'Acts as the reference for programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues. Requires strong technical skills on new programming codes and solid analytical skills.',
     color: 'bg-[#4A6FA5]',
     illustration: role3Img
   }
@@ -76,7 +76,7 @@ export default function RoleScreen({ selectedRole, onSelectRole, onContinue, onH
         </button>
         
         <div className="flex gap-2">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((dot, index) => (
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((dot, index) => (
             <div
               key={dot}
               className={`h-2 rounded-full ${

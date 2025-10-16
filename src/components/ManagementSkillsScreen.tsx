@@ -107,7 +107,7 @@ export default function ManagementSkillsScreen({ selectedRole, selectedSector, s
         </div>
         
         <div className="flex gap-2">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((dot, index) => (
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((dot, index) => (
             <div
               key={dot}
               className={`h-2 rounded-full ${

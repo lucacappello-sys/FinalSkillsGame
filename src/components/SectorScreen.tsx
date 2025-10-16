@@ -16,7 +16,7 @@ const sectors = [
     id: 1,
     label: 'Sector 1',
     title: 'FOOD SECTOR',
-    description: 'In the agrifood sector, products are sourced directly from the field in various sized boxes and bins. These items need to be sorted gently based on dimensions, and then packed to meet market requirements. The new Industry 5.0 technologies enable automated sorting and packing by using new gripping concepts, increasing efficiency and ensuring product quality.',
+    description: 'In the food sector, products are received directly from the field in various-sized boxes and bins. These items need to be sorted gently based on dimensions, and then packed to meet market requirements. The new Industry 5.0 technologies enable automated sorting and packing by using new gripping concepts, increasing efficiency and ensuring product quality.',
     color: 'bg-[#A7A8D4]',
     illustration: sector1Img
   },
@@ -24,7 +24,7 @@ const sectors = [
     id: 2,
     label: 'Sector 2',
     title: 'AUTOMOTIVE SECTOR',
-    description: 'In the automotive sector, complex assemblies include order preparation for part delivery, kitting, and assembly. Robotics technologies aim to enhance productivity by performing tasks like sorting, identifying, and packing parts for shipment, while also reducing errors.',
+    description: 'In the automotive sector, common activities include order preparation for part delivery, kitting, and assembly. Robotics technologies aim to enhance productivity by performing tasks like sorting, identifying, and packing parts for shipment, while also reducing errors.',
     color: 'bg-[#8182B6]',
     illustration: sector2Img
   },
@@ -32,7 +32,7 @@ const sectors = [
     id: 3,
     label: 'Sector 3',
     title: 'LOGISTIC SECTOR',
-    description: 'The logistic sector deals with a challenging variety of products. The new Industry 5.0 technologies aim at streamlining the order preparation process and stock management by using AI-enhanced cameras, capable of handling diverse product characteristics.',
+    description: 'The logistics sector deals with a challenging variety of products. The new Industry 5.0 technologies aim at streamlining the order preparation process and stock management by using AI-enhanced robots, capable of handling diverse product characteristics. ',
     color: 'bg-[#6563AA]',
     illustration: sector3Img
   }
@@ -85,7 +85,7 @@ export default function SectorScreen({ selectedSector, onSelectSector, onContinu
         </div>
         
         <div className="flex gap-2">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((dot, index) => (
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((dot, index) => (
             <div
               key={dot}
               className={`h-2 rounded-full ${
