@@ -24,53 +24,53 @@ interface ReviewScreenProps {
 // Role data with descriptions and styling
 const roles = [
  {
-    id: 1,
-    label: 'Role 1',
-    title: 'SMART LINE OPERATOR',
-    description: 'Works with collaborative robots which supervises their operations, and performs basic (repetitive) work or robots but requires most manual and repetitive tasks, this role requires broader skills than before, especially technical, analytical, and collaboration skills.',
-    color: 'bg-[#5DADE2]',
-    illustration: role1Img
+     id: 1,
+     label: 'Role 1',
+     title: 'SMART LINE OPERATOR',
+     description: 'Works alongside robots in shared areas, supervises their operations, and performs basic troubleshooting. As robots handle the most manual and repetitive tasks, ...',
+     color: 'bg-[#5DADE2]',
+     illustration: role1Img
   },
   {
-    id: 2,
-    label: 'Role 2',
-    title: 'PLANT FLOW-KEEPER',
-    description: 'Manages production flows in smart factories and supervises production flows, supports and alerts and robots and ensures process efficiency. This role combines strong management, technical, operational, and analytical skills to plan activities, resolve medium level issues, and maintain smooth and safe production operations.',
-    color: 'bg-[#E59866]',
-    illustration: role2Img
+   id: 2,
+      label: 'Role 2',
+      title: 'PLANT FLOW-KEEPER',
+      description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency...',
+      color: 'bg-[#E59866]',
+      illustration: role2Img
   },
   {
     id: 3,
-    label: 'Role 3',
-    title: 'TECH SOLVER',
-    description: 'Acts as key role in designing, programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues. Requires strong technical skills and advanced programming codes and solid analytical skills.',
-    color: 'bg-[#4A6FA5]',
-    illustration: role3Img
+      label: 'Role 3',
+      title: 'TECH SOLVER',
+      description: 'Acts as the reference for programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues... ',
+      color: 'bg-[#4A6FA5]',
+      illustration: role3Img
   }
 ];
 
 const sectors = [
   {
-    id: 1,
-    label: 'Sector 1',
-    title: 'FOOD SECTOR',
-    description: 'In the agrifood sector, products are sourced directly from the field in various sized boxes and bins. These items need to be sorted gently based on dimensions, and then packed to meet market requirements. The new Industry 5.0 technologies enable automated sorting and packing by using new gripping concepts, increasing efficiency and ensuring product quality.',
-    color: 'bg-[#A7A8D4]',
-    illustration: sector1Img
+   id: 1,
+      label: 'Sector 1',
+      title: 'FOOD SECTOR',
+      description: 'In the food sector, products are received directly from the field in various-sized boxes and bins. These items need to be sorted gently based on dimensions, and then packed ...',
+      color: 'bg-[#A7A8D4]',
+      illustration: sector1Img
   },
   {
     id: 2,
-    label: 'Sector 2',
-    title: 'AUTOMOTIVE SECTOR',
-    description: 'In the automotive sector, complex assemblies include order preparation for part delivery, kitting, and assembly. Robotics technologies aim to enhance productivity by performing tasks like sorting, identifying, and packing parts for shipment, while also reducing errors.',
-    color: 'bg-[#8182B6]',
-    illustration: sector2Img
+      label: 'Sector 2',
+      title: 'AUTOMOTIVE SECTOR',
+      description: 'In the automotive sector, common activities include order preparation for part delivery, kitting, and assembly. Robotics technologies aim to enhance productivity ...',
+      color: 'bg-[#8182B6]',
+      illustration: sector2Img
   },
   {
-    id: 3,
+  id: 3,
     label: 'Sector 3',
     title: 'LOGISTIC SECTOR',
-    description: 'The logistic sector deals with a challenging variety of products. The new Industry 5.0 technologies aim at streamlining the order preparation process and stock management by using AI-enhanced cameras, capable of handling diverse product characteristics.',
+    description: 'The logistics sector deals with a challenging variety of products. The new Industry 5.0 technologies aim at streamlining the order preparation process and stock management by using AI-enhanced robots... ',
     color: 'bg-[#6563AA]',
     illustration: sector3Img
   }

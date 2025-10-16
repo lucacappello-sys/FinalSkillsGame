@@ -99,15 +99,15 @@ export default function ResultsScreen({ selectedRole, selectedSector, scores, fi
 
   return (
     <div className="size-full flex flex-col ">
-      <div className="bg-[#D8DCE6] px-[29px] py-[24px] py-[9px] px-[24px]">
+      <div className="bg-[#D8DCE6] px-[29px] py-[5px] py-[9px] px-[24px]">
         <h2 className="text-[#2C3E50] text-center">Your results:</h2>
       </div>
       
       <div className="flex-1 overflow-hidden p-4 bg-white ">
         <div className="max-w-6xl mx-auto flex gap-8">
           {/* Left side - Cards and Final Score */}
-          <div className="flex-align  flex-col gap-6 w-[66%] ">
-            <div className="flex gap-6">
+          <div className="flex-align  flex-col gap-2 w-[66%] ">
+            <div className="flex gap-2">
         {/* Role Card */}
         {role && (
           <div className={`${role.color} rounded-2xl p-6 shadow-lg flex-1`}> 
@@ -142,7 +142,7 @@ export default function ResultsScreen({ selectedRole, selectedSector, scores, fi
         </div>
       </div>
           {/* Right side - Skill Scores */}
-          <div className="flex-1 flex flex-col gap-6">
+          <div className="flex-1 flex flex-col gap-2">
             {/* Technical Skills */}
             <div>
               <div className="text-[#2C3E50] mb-2">Technical Skills:</div>
