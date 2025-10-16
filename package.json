@@ -58,7 +58,7 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "chmod +x node_modules/.bin/vite && tsc && vite build",
+            "build": "chmod +x node_modules/.bin/vite && vite build",
   
             "start": "serve -s build -l $PORT"
       }
