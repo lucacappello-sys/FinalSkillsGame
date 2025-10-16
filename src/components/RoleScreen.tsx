@@ -16,7 +16,7 @@ const roles = [
     id: 1,
     label: 'Role 1',
     title: 'SMART LINE OPERATOR',
-    description: 'Works alongside robots in shared areas, supervises their operations, and performs basic troubleshooting. As robots handle the most manual and repetitive tasks, this role requires broader skills than before, especially technical, analytical, and collaboration skills.',
+    description: 'Works alongside robots in shared areas, supervises their operations, and performs basic troubleshooting. As robots handle the most manual and repetitive tasks, ...',
     color: 'bg-[#5DADE2]',
     illustration: role1Img
   },
@@ -24,7 +24,7 @@ const roles = [
     id: 2,
     label: 'Role 2',
     title: 'PLANT FLOW-KEEPER',
-    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency. The role combines strong management, technical, operational, and analytical skulls to plan activities, resolve medium-level issues, and maintain smooth and safe production operations.',
+    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency. The role combines strong management, technical, operational, and analytical skills ...',
     color: 'bg-[#E59866]',
     illustration: role2Img
   },
@@ -32,7 +32,7 @@ const roles = [
     id: 3,
     label: 'Role 3',
     title: 'TECH SOLVER',
-    description: 'Acts as the reference for programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues. Requires strong technical skills on new programming codes and solid analytical skills.',
+    description: 'Acts as the reference for programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues... ',
     color: 'bg-[#4A6FA5]',
     illustration: role3Img
   }
@@ -41,12 +41,12 @@ const roles = [
 export default function RoleScreen({ selectedRole, onSelectRole, onContinue, onHome }: RoleScreenProps) {
   return (
     <div className="size-full flex flex-col ">
-      <div className="bg-[rgb(234,239,246)] px-[29px] py-[5px] py-[9px] px-[24px]">
-        <h2 className="text-[rgb(0,0,0)] text-center text-[20px]">Choose the role:</h2>
-        <p className="text-[rgb(0,0,0)] text-center mt-1 text-[15px]">Select the role you want to analyse.</p>
+      <div className="bg-[#D8DCE6] px-[29px] py-[5px] py-[9px] px-[24px]">
+        <h2 className="text-[rgb(0,0,0)] text-center font-bald">Choose the role:</h2>
+        <p className="text-[rgb(0,0,0)] text-center mt-1">Select the role you want to analyse.</p>
       </div>
       
-     <div className="flex-1  p-4 bg-white overflow-hidden">
+     <div className="flex-1 flex items-center justify-center p-4 bg-white overflow-hidden">
         <div className="flex gap-6 max-w-6xl">
           {roles.map((role) => (
             <div

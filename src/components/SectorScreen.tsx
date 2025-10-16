@@ -42,8 +42,8 @@ export default function SectorScreen({ selectedSector, onSelectSector, onContinu
   return (
     <div className="size-full flex flex-col">
       <div className="bg-[#D8DCE6] px-[29px] py-[5px] py-[9px] px-[24px]">
-        <h2 className="text-[#2C3E50] text-center">Choose the sector:</h2>
-        <p className="text-[#2C3E50] text-center mt-1">Select the industry sector you want to refer to.</p>
+        <h2 className="text-[rgb(0,0,0)] text-center font-bald">Choose the sector:</h2>
+        <p className="text-[rgb(0,0,0)] text-center mt-1">Select the industry sector you want to refer to.</p>
       </div>
       
       <div className="flex-1 flex items-center justify-center p-4 bg-white overflow-hidden">
