@@ -1,0 +1,21 @@
+{
+  "name": "Skills Transformation Map",
+  "short_name": "Skills Map",
+  "description": "Interactive educational game about Industry 5.0 technologies and skills.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#E8EBF0",
+  "theme_color": "#2E5A9E",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
