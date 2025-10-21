@@ -47,7 +47,7 @@ const formatFinalScoreText = (score: number) => `Final score: ${score}% correct 
 export default function App() {
   // Current screen state - controls which screen is displayed
   const [currentScreen, setCurrentScreen] = useState<Screen>('welcome');
-  
+  const [sessionId, setSessionId] = useState<number | null>(null);
   // User selections state
   const [selectedRole, setSelectedRole] = useState<number | null>(null);
   const [selectedSector, setSelectedSector] = useState<number | null>(null);
@@ -134,9 +134,58 @@ export default function App() {
     setCurrentScreen('results');
   };
 
-  // Navigate to user info collection form
-  const handleGoToUserInfo = () => {
+  const handleResultsPage = () => {
     setCurrentScreen('userinfo');
+  }
+  const formatSkillsPayload = (skills: Record<string, string[]>) => {
+		return {
+			"Personal/Soft": (skills["Personal/Soft"] || []).join(', '),
+			"Management": (skills["Management"] || []).join(', '),
+			"Collab/Comm": (skills["Collab/Comm"] || []).join(', '),
+			"Interaction/UX": (skills["Interaction/UX"] || []).join(', '),
+			"Analytical": (skills["Analytical"] || []).join(', '),
+			"Technical": (skills["Technical"] || []).join(', '),
+			"Operational": (skills["Operational"] || []).join(', '),
+		};
+	};
+
+  // Navigate to user info collection form
+  const handleGoToUserInfo = async () => {
+    const roleTitle = roles.find(r => r.id === selectedRole)?.title || 'N/A';
+        const sectorTitle = sectors.find(s => s.id === selectedSector)?.title || 'N/A';
+    
+        const dataToInsert = {
+          Timestamp: new Date().toISOString(),
+          Role: roleTitle,
+          Scenario: sectorTitle,
+          "Final Score": formatFinalScoreText(finalScore),
+          
+          // INSERIMENTO CORRETTO DEI DATI SKILL:
+          ...formatSkillsPayload(allSelectedSkills)
+        };
+    
+        try {
+          const { data, error } = await supabase
+            .from('game_sessions')
+            .insert([dataToInsert])
+            .select('id'); // Importante: recupera l'ID della riga appena creata
+    
+          if (error || !data || data.length === 0) {
+            console.error('Supabase insert error (Phase 1):', error?.message || 'No data returned.');
+            alert('Errore nel salvataggio iniziale dei risultati. Riprova.');
+            return;
+          }
+    
+          // Salva l'ID della nuova riga
+          setSessionId(data[0].id);
+          
+          // Naviga alla schermata successiva (UserInfo)
+          setCurrentScreen('userinfo');
+    
+        } catch (e) {
+          console.error('Network error during Phase 1 save:', e);
+          alert('Si è verificato un errore di comunicazione.');
+        }
   };
 
 
@@ -475,7 +524,8 @@ export default function App() {
           finalScore={finalScore}
           onHome={handleHome}
           onBack={handleBack}
-          onSave={handleGoToUserInfo}
+          onSave={handleResultsPage}
+         
         />
       )}
       {/* User Info Screen - Collects demographic information */}

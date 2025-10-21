@@ -258,7 +258,7 @@ export default function ResultsScreen({ selectedRole, selectedSector, scores, fi
           onClick={onSave}
           className="bg-[#6B7CCC] hover:bg-[#5A6BB5] text-white px-8 py-3 rounded-full transition-colors px-[22px] py-[9px]"
         >
-          Save
+          Continue
         </button>
       </div>
     </div>
