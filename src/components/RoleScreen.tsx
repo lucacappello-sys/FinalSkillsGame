@@ -16,7 +16,7 @@ const roles = [
     id: 1,
     label: 'Role 1',
     title: 'SMART LINE OPERATOR',
-    description: 'Works alongside robots in shared areas, supervises their operations, and performs basic troubleshooting. As robots handle the most manual and repetitive tasks, ...',
+    description: 'Works alongside robots in shared areas, supervises their operations, and performs basic troubleshooting.',
     color: 'bg-[#5DADE2]',
     illustration: role1Img
   },
@@ -24,7 +24,7 @@ const roles = [
     id: 2,
     label: 'Role 2',
     title: 'PLANT FLOW-KEEPER',
-    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency...',
+    description: 'Manages and coordinates the team and work area, supervises production flows, supports operators and robots and ensures process efficiency.',
     color: 'bg-[#E59866]',
     illustration: role2Img
   },
@@ -32,7 +32,7 @@ const roles = [
     id: 3,
     label: 'Role 3',
     title: 'TECH SOLVER',
-    description: 'Acts as the reference for programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues... ',
+    description: 'Acts as the reference for programming robots, configuring systems to optimise production processes, performing maintenance, and solving technical issues. ',
     color: 'bg-[#4A6FA5]',
     illustration: role3Img
   }
@@ -56,7 +56,9 @@ export default function RoleScreen({ selectedRole, onSelectRole, onContinue, onH
                 selectedRole === role.id ? 'ring-4 ring-gray shadow-2xl' : 'shadow-lg'
               } flex-1`}
             >
-              <div className="text-white text-sm mb-2">{role.label}</div>
+              <div className="text-white text-sm mb-2">{role.label}
+              </div>
+              
               <div className="bg-white rounded-xl p-0 mb-2 h-25 flex items-center justify-center overflow-hidden">
                 <img src={role.illustration} alt={role.title} className="w-full h-full object-cover" />
               </div>

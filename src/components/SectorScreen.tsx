@@ -16,7 +16,7 @@ const sectors = [
     id: 1,
     label: 'Sector 1',
     title: 'FOOD SECTOR',
-    description: 'In the food sector, products are received directly from the field in various-sized boxes and bins. These items need to be sorted gently based on dimensions, and then packed ...',
+    description: 'In the food sector, products are received directly from the field in various-sized boxes and bins. These items need to be sorted gently based on dimensions and then packed.',
     color: 'bg-[#A7A8D4]',
     illustration: sector1Img
   },
@@ -24,7 +24,7 @@ const sectors = [
     id: 2,
     label: 'Sector 2',
     title: 'AUTOMOTIVE SECTOR',
-    description: 'In the automotive sector, common activities include order preparation for part delivery, kitting, and assembly. Robotics technologies aim to enhance productivity ...',
+    description: 'In the automotive sector, common activities include order preparation for part delivery, kitting, and assembly. Robotics technologies aim to enhance productivity.',
     color: 'bg-[#8182B6]',
     illustration: sector2Img
   },
@@ -32,7 +32,7 @@ const sectors = [
     id: 3,
     label: 'Sector 3',
     title: 'LOGISTIC SECTOR',
-    description: 'The logistics sector deals with a challenging variety of products. The new Industry 5.0 technologies aim at streamlining the order preparation process and stock management by using AI-enhanced robots... ',
+    description: 'The logistics sector deals with a challenging variety of products. The new Industry 5.0 technologies aim at streamlining the order preparation process and stock management by using AI-enhanced robots. ',
     color: 'bg-[#6563AA]',
     illustration: sector3Img
   }
